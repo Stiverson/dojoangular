@@ -1,7 +1,7 @@
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
   <input type="text" formControlName="email" placeholder="email">
-  <select formControlName="paises">
-    <option *ngFor="let pais of paises" [ngValue]="pais.id">
+  <select formControlName="paises" >
+    <option *ngFor="let pais of paises" [ngValue]="pais.id" >
       {{pais.label}}
     </option>
   </select>
