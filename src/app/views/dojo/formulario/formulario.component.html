@@ -1,7 +1,9 @@
+
+
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
-  <input type="text" formControlName="email" placeholder="email">
+  
   <select formControlName="paises" >
-    <option *ngFor="let pais of paises" [ngValue]="pais.id" >
+    <option *ngFor="let pais of paisesRecebidos" [ngValue]="pais.id" >
       {{pais.label}}
     </option>
   </select>
@@ -11,13 +13,12 @@
     </option>
   </select>
   <br>
-    <input type="text" mask="00/00/0000" formControlName="data"/>
-  <input type="submit" value="enviar" [disabled]="!searchForm.valid">
+   
+  <input type="submit" value="enviar" 
+                      [disabled]="!searchForm.valid"
+                      [routerLink]="['/listcases']">
 </form>
 <div *ngIf="foiSubmetido">
   <app-mensagem [sucesso]="tipoMensagem"></app-mensagem>
 </div>
 
-<label class="information" style="margin-top: 30px; display: block;">
-  {{ prettyRes }}
-</label>

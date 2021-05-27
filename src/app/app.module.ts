@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { DojoModule } from './views/dojo/dojo.module';
 import { CommonModule } from '@angular/common';
 import { CasesComponent } from './cases/cases.component';
+import { ListcasesComponent } from './views/dojo/listcases/listcases.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CasesComponent
+    
   ],
   imports: [
     BrowserModule,

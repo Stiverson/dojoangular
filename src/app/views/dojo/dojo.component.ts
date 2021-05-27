@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { PaisesModel } from 'src/app/models/paises.model';
 
 
 @Component({
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./dojo.css']
   })
 export class DojoComponent{
-
+  @Input() paises: PaisesModel[] = []
+  onChange(){
+    console.log(this.paises);
+  }
 }
 

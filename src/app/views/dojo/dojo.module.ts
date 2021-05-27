@@ -6,11 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DojoRoutingModule } from './dojo-routing-module';
 import { CommonModule } from '@angular/common';
 import { NgxMaskModule, IConfig } from 'ngx-mask'
+import { ListcasesComponent } from 'src/app/views/dojo/listcases/listcases.component';
 
 @NgModule({
   declarations: [
     DojoComponent,
-    FormularioComponent
+    FormularioComponent,
+    ListcasesComponent
   ],
   imports: [
     CommonModule,

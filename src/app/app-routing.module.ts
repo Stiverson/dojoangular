@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ListcasesComponent } from './views/dojo/listcases/listcases.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,10 @@ const routes: Routes = [
   {
     path: 'paises',
     loadChildren: () => import('./views/dojo/dojo.module').then(module => module.DojoModule)
+  },
+  {
+    path: 'listcases',
+    component: ListcasesComponent
   },
   {
     path: '',

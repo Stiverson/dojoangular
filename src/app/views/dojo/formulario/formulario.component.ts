@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { FormBuilder, Validators } from "@angular/forms";
 import { PaisesModel } from "src/app/models/paises.model";
 import { UfModel } from "src/app/models/uf.model";
@@ -13,8 +13,7 @@ import { FormularioService } from "./formulario.service";
 export class FormularioComponent implements OnInit {
 
   constructor(private fb: FormBuilder, private formularioservice: FormularioService) { }
-
-  paises: PaisesModel[] = [];
+  @Input()  paisesRecebidos: PaisesModel[] = [];
   ufs: UfModel[] = [];
   foiSubmetido: boolean = false;
 
@@ -22,10 +21,10 @@ export class FormularioComponent implements OnInit {
 
 
   searchForm = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
+    //email: ['', [Validators.required, Validators.email]],
     paises: ['', Validators.required],
     uf: ['', Validators.required],
-    data: ['', Validators.required]
+    //data: ['', Validators.required]
   });
 
   get email() { return this.searchForm.get('email'); }
@@ -42,7 +41,7 @@ export class FormularioComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.formularioservice.getPaises().subscribe((response) => { this.paises = response });
+    this.formularioservice.getPaises().subscribe((response) => { this.paisesRecebidos = response });
     this.formularioservice.getUfs().subscribe((response) => { this.ufs = response });
 
   }

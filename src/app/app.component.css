@@ -12,7 +12,7 @@
 }
 
 .conteudo {
-  background: #FFFFFF url("../assets/img/pocovid.jpg") repeat  top fixed;
+  /*background: #FFFFFF url("../assets/img/pocovid.jpg") repeat  top fixed;*/
   background-size: 1020px 1000px;
   border: blue 1px solid;
   height: 700px;
