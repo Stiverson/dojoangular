@@ -1,0 +1,19 @@
+.lateral {
+  width: 200px;
+  border:black 1px solid;
+  height: 700px;
+  float: left;
+  background-color:cyan;
+}
+
+.principal {
+  height: 100%;
+  width: 100%;
+}
+
+.conteudo {
+  background: #FFFFFF url("../assets/img/pocovid.jpg") repeat  top fixed;
+  background-size: 1020px 1000px;
+  border: blue 1px solid;
+  height: 700px;
+}

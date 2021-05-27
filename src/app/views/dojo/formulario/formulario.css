@@ -1,0 +1,34 @@
+input[type='text'] {
+    display: block;
+    width: 300px;
+    height: 30px;
+}
+
+select {
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+input[type='submit'] {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+}
+
+form {
+    display: inline-block;
+    margin-left: 30px;
+    width: 400px;
+}
+
+
+.data-position{
+    padding-bottom: 100px;
+}
+
+.information{
+    color: blanchedalmond;
+}
