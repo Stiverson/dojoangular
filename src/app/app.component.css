@@ -3,7 +3,7 @@
   border:black 1px solid;
   height: 700px;
   float: left;
-  background-color:cyan;
+  background-color:cadetblue;
 }
 
 .principal {
@@ -12,8 +12,8 @@
 }
 
 .conteudo {
-  /*background: #FFFFFF url("../assets/img/pocovid.jpg") repeat  top fixed;*/
-  background-size: 1020px 1000px;
+  background: #FFFFFF url("../assets/covid-home.png") repeat  top fixed;
+  background-size: 1102px 707px;
   border: blue 1px solid;
   height: 700px;
 }

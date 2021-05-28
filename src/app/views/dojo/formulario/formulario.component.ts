@@ -62,6 +62,7 @@ export class FormularioComponent implements OnInit, OnChanges {
   }
 
   onclick(){
+    localStorage.clear();
     this.formularioservice.getState('asdfasdf','2020-03-18',this.paisNome, this.uf )
     .subscribe((response:StateModel) => { 
       console.log(response)
