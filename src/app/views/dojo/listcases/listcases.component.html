@@ -1,7 +1,40 @@
-<h1>Aparaceu caramba vtnc</h1>
+<div>
+<h1>Estado de {{state.state}}  </h1>
 
 <div>
-    <ul *ngFor="let pais of paises">
-        {{pais.label}} 
+    <ul>
+        UF: {{state.uf}}
+        <br>
+        Estado: {{state.state}}
+        <br>
+        Casos: {{state.cases}}
+        <br>
+        Mortes: {{state.deaths}}
+        <br>
+        Suspeitas: {{state.suspects}}
+        <br>
+        Negativos: {{state.refuses	}}
+        <br>
+        Data: {{state.datetime}}
+
     </ul>
 </div>
+<div>
+    <h1>Pais {{country.country}}  </h1>
+    
+    <div>
+        <ul>
+            Pais: {{country.country}}
+            <br>
+            Casos: {{country.cases}}
+            <br>
+            Confirmados: {{country.confirmed}}
+            <br>
+            Mortos: {{country.deaths}}
+            <br>
+            Recuperados: {{country.recovered}}
+            <br>
+    
+        </ul>
+    </div>
+    

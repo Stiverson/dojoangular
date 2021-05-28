@@ -10,8 +10,7 @@ const routes: Routes = [
   },
   {
     path:'/listcases',
-    component: ListcasesComponent
-
+    component: ListcasesComponent,
   }
 
 ]

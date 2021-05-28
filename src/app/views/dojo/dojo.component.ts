@@ -8,9 +8,6 @@ import { PaisesModel } from 'src/app/models/paises.model';
     styleUrls: ['./dojo.css']
   })
 export class DojoComponent{
-  @Input() paises: PaisesModel[] = []
-  onChange(){
-    console.log(this.paises);
-  }
+
 }
 

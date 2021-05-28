@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  backUrl: 'http://localhost:3000'
+  backUrl: 'http://localhost:3000',
+  backPocovidUrl: 'http://localhost:8080/v1/pocovid'
 };
 
 /*

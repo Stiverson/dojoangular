@@ -2,21 +2,22 @@
 
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
   
-  <select formControlName="paises" >
-    <option *ngFor="let pais of paisesRecebidos" [ngValue]="pais.id" >
+  <select formControlName="paises" [(ngModel)]="paisNome" (change)="selected()" >
+    <option *ngFor="let pais of paisesRecebidos" [ngValue]="pais.label" >
       {{pais.label}}
     </option>
   </select>
-  <select formControlName="uf">
+  <select formControlName="uf" [(ngModel)]="uf" (change)="selected()" >
     <option *ngFor="let uf of ufs" [ngValue]="uf.uf">
       {{uf.label}}
     </option>
   </select>
   <br>
-   
+
   <input type="submit" value="enviar" 
                       [disabled]="!searchForm.valid"
-                      [routerLink]="['/listcases']">
+                      [routerLink]="['/listcases']"
+                      (click)="onclick()">
 </form>
 <div *ngIf="foiSubmetido">
   <app-mensagem [sucesso]="tipoMensagem"></app-mensagem>
